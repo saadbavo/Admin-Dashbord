@@ -145,3 +145,16 @@ gap: 40px;
     margin-left: 20px;
     
 }
+.firstc .user-info img{
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+.header .firstc form{
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    
+}
