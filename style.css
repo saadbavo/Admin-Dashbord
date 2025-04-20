@@ -42,7 +42,7 @@ body{
 
 
 .sidbar {
-background-color: #1A1A1A;
+background-color: #F2F7FF;
 grid-row: 1/3;
 grid-column: 1;
 display: grid;
@@ -50,7 +50,7 @@ display: grid;
 overflow: auto;
 grid-template-rows:auto 1fr ;
 height: 100%;
-color: #FFFFFF;
+color: #333333;
 font-family: "robbik";
 
 padding: 1.5rem;
@@ -73,7 +73,7 @@ gap: 40px;
     align-items: center;
 }
 .sidbar .nav ul li svg{
-    fill: #FFFFFF;
+    fill: #333333;
     width: 30px;
     height: 30px;
     float: left;
@@ -108,7 +108,7 @@ gap: 40px;
 }
 
 .sidbar .bran ul li svg {
-    fill: #FFFFFF;
+    fill: #333333;
     width: 30px;
     height: 30px;
     margin-right: 10px;
@@ -119,9 +119,9 @@ gap: 40px;
     border: none;
     display: grid;
    grid-template-columns: 1fr auto ;
-    background-color: #121212;
+    background-color: #FFF8E1;
    grid-row: 1;
-    color: #FFFFFF;
+    color: #333333;
     gap: 1rem;
 
     padding: 0.75rem 1.5rem;
@@ -140,8 +140,8 @@ gap: 40px;
     padding: 1.5rem ;
    overflow: auto;
     height: 100%;
-    background-color: #121212;
-    color: #FFFFFF;
+    background-color: #F2F7FF;
+    color: #333333;
 }
 
 
@@ -166,7 +166,7 @@ gap: 40px;
 .header .firstc form{
     position: relative;
     width: 100%;
-    max-width: 400px;
+    max-width: 600px;
     margin: 0 auto;
     grid-column: 2;
 
@@ -174,8 +174,8 @@ gap: 40px;
 
 #search{
     width: 100%;
+    height: 20px;
     padding: 10px 16px;
-    border: 1px solid #ccc;
     border-radius: 999px;
     font-size: 1rem;
 
@@ -203,7 +203,7 @@ gap: 40px;
 .icon {
     width: 20px;
     height: 20px;
-    fill: #555;
+    fill: #333333;
   }
 .btns {
     display: grid;
@@ -221,11 +221,11 @@ gap: 40px;
     border: none;
     cursor: pointer;
     transition: all 0.3s ease;
-    background-color: #BB86FC ; /* Indigo */
+    background-color: #FF6F91 ; /* Indigo */
     color: white
 }
 .btns button:hover{
-    background-color :#03DAC6; /* Darker Indigo */
+    background-color :#5AD1CD ; /* Darker Indigo */
     box-shadow: 0 4px 6px #00bba8 0.5 ;
 }
 .bt-text{
@@ -250,32 +250,37 @@ gap: 40px;
 
 .proj-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+     grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-template-rows: repeat(3, auto);   /* 3 rows */
     gap: 1rem;
     margin-top: 1rem;
 }
 
 #cards{
-    background-color: #232323;
-    border-left: 12px solid #333333;
+    background-color: #FFFFFF;
+    border-left: 12px solid  #EAEAEA ;
     border-top-left-radius: 10%;
     border-bottom-left-radius: 10%;
-    box-shadow: 8px #333333 0.5;
-    display: grid;
-    justify-content: left;
-    align-items: start;
-    padding: 16px;
+    box-shadow: 8px  #EAEAEA  0.5;
+
+    padding: 10px;
     font-family: "robbik", "alan-bush";
     font-size: 20px;
+    position: relative;
+    padding-bottom: 2rem; /* add space for icons */
 }
 .icons{
     width: 40px;
     height: 40px;
     fill: #555; 
 }
-#gicon{
+.gicon{
 
-    margin-right: 40px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    gap: 0.5rem;
 }
 
 .right{
@@ -289,4 +294,22 @@ gap: 40px;
     padding: 1rem;
     border-radius: 10px;
     font-family: "robbik", "alan-bush";
+   
+}
+.tre-grid{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 8px;
+}
+.tre-info{
+    display: grid;
+    grid-template-columns: auto ;
+    align-items: center; /* vertically center */
+    
+}
+h2{
+    margin-bottom: 25px;
+}
+.tre-grid .user-icon{
+    margin-bottom: 10px;
 }
